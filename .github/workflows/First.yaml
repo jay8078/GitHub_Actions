@@ -5,7 +5,7 @@ on: push
 jobs:
   hello:
     name: Hello
-    run-on: ubuntu:20.04
+    run-on: ubuntu:latest
     steps: 
       - name: Checkout
         uses: actions/checkout/v2
