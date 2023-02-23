@@ -10,9 +10,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout/v2
         run: ls
-        shell: bash
-
-    steps:
-      - name: Hello
         run: echo "Hello World"
         shell: bash
