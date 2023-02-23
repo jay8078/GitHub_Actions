@@ -9,5 +9,9 @@ jobs:
     steps: 
       - name: Checkout
         uses: actions/checkout@v3
-      - run: ls | cat Helloworld.txt
+      - run: | 
+         ls
+         pwd
+         sudo su
+         cat Helloworld.txt
       - run: echo "hello"
