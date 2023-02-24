@@ -2,7 +2,13 @@ name: Demo
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: '0 0 * * *' # Run every day at midnight UTC
+  push: 
+    branches: 
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   hello:
