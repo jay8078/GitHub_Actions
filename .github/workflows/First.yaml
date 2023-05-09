@@ -2,7 +2,7 @@ name: Main
 
 on:
   schedule:
-    - cron: '*/1 * * * *' # Run every day at midnight UTC
+    - cron: '*/10 * * * *' # Run every day at midnight UTC
   push: 
     branches: 
       - main
