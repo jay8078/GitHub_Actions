@@ -17,5 +17,4 @@ jobs:
          ls
          pwd
          sudo su
-         cat Helloworld.txt
       - run: echo "hello"
