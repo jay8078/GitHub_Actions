@@ -1,6 +1,7 @@
 name: Demo
 
 on:
+  push:
   schedule:
     - cron: '*/1 * * * *' # Run every day at midnight UTC
 
