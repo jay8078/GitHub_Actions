@@ -3,7 +3,7 @@ name: Develop
 on:
   push:
   schedule:
-    - cron: '*/1 * * * *' # Run every day at midnight UTC
+    - cron: '*/14 * * * *' # Run every day at midnight UTC
 
 
 jobs:
