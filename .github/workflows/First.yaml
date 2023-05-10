@@ -21,4 +21,5 @@ jobs:
          ls
          pwd
          sudo su
+         echo '$GITHUB_EVENT_NAME'
       - run: echo "hello"
