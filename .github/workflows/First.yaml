@@ -4,11 +4,7 @@ on:
   schedule:
     - cron: '*/10 * * * *' # Run every day at midnight UTC
   push: 
-    branches: 
-      - main
   pull_request:
-    branches:
-      - main
 
 jobs:
   hello:
