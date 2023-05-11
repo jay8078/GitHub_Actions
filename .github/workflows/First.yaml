@@ -1,8 +1,6 @@
 name: Main
 
 on:
-  schedule:
-    - cron: '*/10 * * * *' # Run every day at midnight UTC
   push: 
   pull_request:
 
