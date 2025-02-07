@@ -22,6 +22,7 @@ jobs:
          echo '$GITHUB_EVENT_NAME'
 
   Second_Job:
+    needs: First_Job
     name: Test
     runs-on: ubuntu-20.04
     steps: 
