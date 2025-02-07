@@ -12,8 +12,10 @@ jobs:
     steps: 
       - name: Clone code
         uses: actions/checkout@v3
-      - run: echo "hello"
-      - run: | 
+      - name: Echo hello
+        run: echo "hello"
+      - name: many commands
+        run: | 
          ls
          pwd
          sudo su
