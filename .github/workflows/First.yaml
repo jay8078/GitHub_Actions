@@ -3,17 +3,18 @@ name: Main
 on:
   push: 
   pull_request:
+  workflow_dispatch:
 
 jobs:
-  hello:
-    name: Hello
+  First_Job:
+    name: Build
     runs-on: ubuntu-20.04
     steps: 
-      - name: Checkout
+      - name: Clone code
         uses: actions/checkout@v3
+      - run: echo "hello"
       - run: | 
          ls
          pwd
          sudo su
          echo '$GITHUB_EVENT_NAME'
-      - run: echo "hello"
